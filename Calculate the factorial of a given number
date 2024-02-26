@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main ()
+{
+    int n, sublimation = 1;
+    printf("Input the number : ");
+    scanf("%d", &n);
+    for( int i=1 ; i<=n; i++) { sublimation*=i; }
+
+    printf("The Factorial of %d is: %d\n", n , sublimation );
+
+    return 0;
+}
