@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main ()
+{
+    int n, sum=0;
+    printf("Input number of terms : ");
+    scanf("%d", &n);
+    printf("The even numbers are :");
+    for( int i=2 ; i<=n*2; i+=2) { printf("%d ", i); sum+=i;} printf("\n");
+
+    printf("The Sum of even Natural Number upto %d terms : %d", n, sum);
+
+    return 0;
+}
