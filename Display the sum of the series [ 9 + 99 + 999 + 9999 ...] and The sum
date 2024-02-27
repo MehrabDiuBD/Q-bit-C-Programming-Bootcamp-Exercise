@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n, series, sum=0;
+
+    printf("Input the number of terms : ");
+    scanf("%d", &n);
+
+    for(int i=0; i<=n; i++) { series += (9* pow(10, i) ); printf("%d ", series); sum+=series;}
+
+    printf("\nThe Sum of Series : %.d", sum);
+
+    return 0;
+}
