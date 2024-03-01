@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main ()
+{
+    int n, N, sum;
+
+    printf("Input the starting range or number : );
+    scanf("%d", &n);
+    printf("Input the ending range of number : ");
+    scanf("%d", &N);
+
+    printf("The Perfect numbers within the given range : ");
+    for(int i=n; i<=N; i++){
+
+        //01
+        sum = 0;
+
+        //02
+        for(int j=1; j<=(i/2); j++){
+
+            if(i%j==0){sum+=j;}
+        }
+
+        //03
+        if(sum==i) printf("%d ", sum);
+        else continue;
+    }
+
+
+    return 0;
+}
